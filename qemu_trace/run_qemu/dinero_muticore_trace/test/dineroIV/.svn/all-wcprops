@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/702/tools/DineroIV_MC
+END
+dineroIV
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/697/tools/DineroIV_MC/dineroIV
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/configure
+END
+cmdd4.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/697/tools/DineroIV_MC/cmdd4.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/697/tools/DineroIV_MC/Makefile.in
+END
+tracein.o
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/tracein.o
+END
+config.log
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/697/tools/DineroIV_MC/config.log
+END
+misc.o
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/697/tools/DineroIV_MC/misc.o
+END
+NOTES
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/697/tools/DineroIV_MC/NOTES
+END
+cmdmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/cmdmain.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/697/tools/DineroIV_MC/config.h
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/697/tools/DineroIV_MC/tags
+END
+cmdargs.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/cmdargs.c
+END
+cmdmain.o
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/cmdmain.o
+END
+cmdargs.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/cmdargs.h
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/697/tools/DineroIV_MC/CHANGES
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/COPYRIGHT
+END
+pixie32fmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/697/tools/DineroIV_MC/pixie32fmt.c
+END
+binaryfmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/697/tools/DineroIV_MC/binaryfmt.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/697/tools/DineroIV_MC/Makefile
+END
+cmdargs.o
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/cmdargs.o
+END
+pixie64fmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/697/tools/DineroIV_MC/pixie64fmt.c
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/697/tools/DineroIV_MC/configure.in
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/697/tools/DineroIV_MC/config.status
+END
+xdinfmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/xdinfmt.c
+END
+d4.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/697/tools/DineroIV_MC/d4.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/697/tools/DineroIV_MC/README
+END
+ref.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/697/tools/DineroIV_MC/ref.c
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/697/tools/DineroIV_MC/config.h.in
+END
+dinfmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/697/tools/DineroIV_MC/dinfmt.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/697/tools/DineroIV_MC/TODO
+END
+tracein.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/tracein.c
+END
+d4.1
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/697/tools/DineroIV_MC/d4.1
+END
+config.cache
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/697/tools/DineroIV_MC/config.cache
+END
+d4.3
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/697/tools/DineroIV_MC/d4.3
+END
+ref.o
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/697/tools/DineroIV_MC/ref.o
+END
+tracein.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/697/tools/DineroIV_MC/tracein.h
+END
+misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/697/tools/DineroIV_MC/misc.c
+END
+libd4.a
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/697/tools/DineroIV_MC/libd4.a
+END
+dinfmt.o
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/697/tools/DineroIV_MC/dinfmt.o
+END

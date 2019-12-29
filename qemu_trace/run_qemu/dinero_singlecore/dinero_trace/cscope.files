@@ -1,0 +1,17 @@
+./tracein.h
+./cmdd4.h
+./pixie32fmt.c
+./xdinfmt.c
+./cmdargs.h
+./cmdargs.c
+./d4.h
+./ref.c
+./tracein.c
+./misc.c
+./cmdmain.c
+./testing/p2d.c
+./testing/p2b.c
+./dinfmt.c
+./pixie64fmt.c
+./binaryfmt.c
+./config.h

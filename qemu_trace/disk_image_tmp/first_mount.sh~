@@ -1,0 +1,3 @@
+modprobe nbd max_part=63
+qemu-nbd -c /dev/nbd0 home.img
+mount /dev/nbd0p1 test

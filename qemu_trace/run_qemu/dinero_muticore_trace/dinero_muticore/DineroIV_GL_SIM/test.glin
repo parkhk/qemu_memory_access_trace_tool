@@ -1,0 +1,73 @@
+START PID 517
+X THREAD_CREATE 0:1
+S 7ff000490 8 1 S main LV _zzq_result
+L 7ff000490 8 1 S main
+S 000601070 4 1 G main GV glScalar
+S 7ff00049c 4 1 S main LV lcScalar
+S 7ff000498 4 1 S main LV i
+L 7ff000498 4 1 S main LV i
+L 000601070 4 1 G main GV glScalar
+L 7ff000498 4 1 S main LV i
+S 7ff000460 4 1 S main LS lcArray[0]
+M 7ff000498 4 1 S main LV i
+L 7ff000498 4 1 S main LV i
+L 000601070 4 1 G main GV glScalar
+L 7ff000498 4 1 S main LV i
+S 7ff000464 4 1 S main LS lcArray[1]
+M 7ff000498 4 1 S main LV i
+L 7ff000498 4 1 S main LV i
+S 7ff000330 8 1 S main
+S 7ff000328 8 1 S func
+S 7ff000310 8 1 S func LV StrcParam
+S 7ff000324 4 1 S func LV i
+L 7ff000324 4 1 S func LV i
+L 000601070 4 1 G func GV glScalar
+L 7ff000324 4 1 S func LV i
+S 000601080 8 1 G func GS glStrcArray[0].var1
+L 000601260 4 1 G func GS glArray[0]
+L 7ff000324 4 1 S func LV i
+S 000601088 4 1 G func GS glStrcArray[0].myArray[0]
+L 7ff000324 4 1 S func LV i
+L 7ff000310 8 1 S func LV StrcParam
+L 7ff000324 4 1 S func LV i
+L 000601260 4 1 G func GS glArray[0]
+S 7ff000340 8 1 S func LS lcStrcArray[0].var1
+M 7ff000324 4 1 S func LV i
+L 7ff000324 4 1 S func LV i
+L 000601070 4 1 G func GV glScalar
+L 7ff000324 4 1 S func LV i
+S 0006010b0 8 1 G func GS glStrcArray[1].var1
+L 000601260 4 1 G func GS glArray[0]
+L 7ff000324 4 1 S func LV i
+S 0006010b8 4 1 G func GS glStrcArray[1].myArray[0]
+L 7ff000324 4 1 S func LV i
+L 7ff000310 8 1 S func LV StrcParam
+L 7ff000324 4 1 S func LV i
+L 000601264 4 1 G func GS glArray[1]
+S 7ff000370 8 1 S func LS lcStrcArray[1].var1
+M 7ff000324 4 1 S func LV i
+L 7ff000324 4 1 S func LV i
+L 000601070 4 1 G func GV glScalar
+L 7ff000324 4 1 S func LV i
+S 0006010e0 8 1 G func GS glStrcArray[2].var1
+L 000601260 4 1 G func GS glArray[0]
+L 7ff000324 4 1 S func LV i
+S 0006010e8 4 1 G func GS glStrcArray[2].myArray[0]
+L 7ff000324 4 1 S func LV i
+L 7ff000310 8 1 S func LV StrcParam
+L 7ff000324 4 1 S func LV i
+L 000601268 4 1 G func GS glArray[2]
+S 7ff0003a0 8 1 S func LS lcStrcArray[2].var1
+M 7ff000324 4 1 S func LV i
+L 7ff000324 4 1 S func LV i
+L 7ff000328 8 1 S func
+L 7ff000330 8 1 S func
+S 7ff000430 8 1 S main LS _zzq_args[0]
+S 7ff000438 8 1 S main LS _zzq_args[1]
+S 7ff000440 8 1 S main LS _zzq_args[2]
+S 7ff000448 8 1 S main LS _zzq_args[3]
+S 7ff000450 8 1 S main LS _zzq_args[4]
+S 7ff000458 8 1 S main LS _zzq_args[5]
+S 7ff00033c 4 1 S main
+L 7ff00033c 4 1 S main
+

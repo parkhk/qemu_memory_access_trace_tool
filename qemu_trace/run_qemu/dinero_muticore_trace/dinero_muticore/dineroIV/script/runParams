@@ -1,0 +1,23 @@
+#!/bin/sh
+
+dinero_single_cache='-l1-usize 32768 -l1-ubsize 64 -l1-uccc -informat d'
+
+test_cache='-l1-usize 64 -l1-ubsize 64 -l1-ubsize 64 -l1-uassoc 1 -l1-urepl l -l1-uccc -l1-umulticore 4 -informat d'
+
+dinero_PF_L1_multicore_split='-l1-isize 32768 -l1-ibsize 64 -l1-iassoc 4 -l1-irepl l -l1-iccc -l1-imulticore 2 -l1-dsize 32768 -l1-dbsize 64 -l1-dassoc 4 -l1-drepl l -l1-dccc -l1-dmulticore 2 -l1-dwback n -informat d'
+
+dinero_PF_L2_multicore_split='-l1-isize 32768 -l1-ibsize 64 -l1-iassoc 4 -l1-irepl l -l1-iccc -l1-imulticore 1 -l1-dsize 32768 -l1-dbsize 64 -l1-dassoc 4 -l1-drepl l -l1-dccc -l1-dmulticore 1 -l1-dwback n -l2-usize 2097152 -l2-ubsize 64 -l2-uassoc 32 -l2-urepl l -l2-uccc -l2-umulticore 1 -informat d'
+
+dinero_PF_L2_multicore_unified='-l1-usize 16384 -l1-ubsize 64 -l1-uassoc 1 -l1-urepl l -l1-uccc -l1-umulticore 4 -l1-uwback n -l2-usize 32768 -l2-ubsize 64 -l2-uassoc 1 -l2-urepl l -l2-uccc -l2-umulticore 1 -l2-uwback a -informat d'
+
+dinero_PF_L3_multicore_fullsplit='-l1-dsize 32768 -l1-dbsize 64 -l1-dassoc 2 -l1-drepl l -l1-dccc -l1-dmulticore 16 -l1-dwback a -l1-dwalloc a -l1-isize 32768 -l1-ibsize 64 -l1-iassoc 2 -l1-irepl l -l1-iccc -l1-imulticore 16 -l2-isize 2097152 -l2-ibsize 64 -l2-iassoc 2 -l2-irepl l -l2-iccc -l2-imulticore 4 -l2-dsize 32768 -l2-dbsize 64 -l2-dassoc 2 -l2-drepl l -l2-dccc -l2-dmulticore 4 -l2-dwback a -l2-dwalloc a -l3-isize 2097152 -l3-ibsize 64 -l3-iassoc 1 -l3-irepl l -l3-iccc -l3-imulticore 1 -l3-dsize 2097152 -l3-dbsize 64 -l3-dassoc 1 -l3-drepl l -l3-dccc -l3-dmulticore 1 -informat d'
+
+dinero_PF_L4_multicore_unified='-l1-usize 32768 -l1-ubsize 64 -l1-uassoc 2 -l1-urepl l -l1-uccc -l1-umulticore 32 -l1-uwback a -l2-usize 65536 -l2-ubsize 64 -l2-uassoc 2 -l2-urepl l -l2-uccc -l2-umulticore 2 -l2-uwback a -l3-usize 2097152 -l3-ubsize 64 -l3-uassoc 2 -l3-urepl l -l3-uccc -l3-umulticore 1 -l3-uwback a -l4-usize 2097152 -l4-ubsize 64 -l4-uassoc 1 -l4-urepl l -l4-uccc -l4-umulticore 1 -l4-uwback a -informat d'
+
+dinero_PF_L4_multicore_partsplit='-l1-dsize 32768 -l1-dbsize 64 -l1-dassoc 4 -l1-drepl l -l1-dccc -l1-dmulticore 8 -l1-dwback n -l1-isize 32768 -l1-ibsize 64 -l1-iassoc 4 -l1-irepl l -l1-ifetch a -l1-iccc -l1-imulticore 8 -l2-dsize 2097152 -l2-dbsize 64 -l2-dassoc 32 -l2-drepl l -l2-dccc -l2-dmulticore 4 -l2-dwback n -l2-isize 2097152 -l2-ibsize 64 -l2-iassoc 32 -l2-ifetch a -l2-irepl l -l2-iccc -l2-imulticore 4 -l3-usize 2097152 -l3-ubsize 64 -l3-uassoc 32 -l3-urepl l -l3-uccc -l3-umulticore 2 -l4-usize 2097152 -l4-ubsize 64 -l4-uassoc 32 -l4-urepl l -l4-uccc -l4-umulticore 1 -informat d'
+
+p_dinero='/home/brandonpotter/Research/dineroIV'
+input_file='/home/brandonpotter/Research/dineroIV/script/sample.trace'
+output_file='/home/brandonpotter/Desktop/dinIV.out'
+
+$p_dinero/dineroIV $dinero_PF_L2_multicore_unified < $input_file > $output_file

@@ -1,0 +1,501 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALL	testing/Makefile	/^ALL = p2d p2b$/;"	m
+ANNUL	pixie32fmt.c	94;"	d	file:
+ANNUL	pixie64fmt.c	108;"	d	file:
+ANNUL	testing/p2b.c	95;"	d	file:
+ANNUL	testing/p2d.c	100;"	d	file:
+BB	pixie32fmt.c	93;"	d	file:
+BB	pixie64fmt.c	107;"	d	file:
+BB	testing/p2b.c	94;"	d	file:
+BB	testing/p2d.c	99;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -O3 -g -Wall -Wcast-qual -Wshadow -Wpointer-arith -Wmissing-prototypes $(DEBUG) -I$(D4_SRC)$/;"	m
+CMD_OBJ_LIST	Makefile	/^CMD_OBJ_LIST = cmdmain.o cmdargs.o tracein.o dinfmt.o$/;"	m
+CMD_SRC_LIST	Makefile	/^CMD_SRC_LIST = $(D4_SRC)\/cmdmain.c $(D4_SRC)\/cmdargs.c $(D4_SRC)\/tracein.c $(D4_SRC)\/dinfmt.c $/;"	m
+CUSTOM_NAME	Makefile	/^CUSTOM_NAME = d4custom # this is really just a placeholder$/;"	m
+CUST_MATCH	cmdargs.c	134;"	d	file:
+CUST_MATCH	cmdargs.c	137;"	d	file:
+CUST_X	cmdargs.c	135;"	d	file:
+CUST_X	cmdargs.c	138;"	d	file:
+D4ADDR	d4.h	60;"	d
+D4ADDR	d4.h	62;"	d
+D4ADDR2BLOCK	d4.h	416;"	d
+D4ADDR2SBMASK	d4.h	440;"	d
+D4ADDR2SET	d4.h	423;"	d
+D4ADDR2SET_DCDR_1	d4.h	427;"	d
+D4ADDR2SET_DCDR_2	d4.h	430;"	d
+D4ADDR2SET_DCDR_3	d4.h	433;"	d
+D4ADDR2SUBBLOCK	d4.h	419;"	d
+D4BASIC_ATYPE	d4.h	108;"	d
+D4CUSTOM	d4.h	54;"	d
+D4F_CCC	d4.h	353;"	d
+D4F_MEM	d4.h	352;"	d
+D4F_RO	d4.h	354;"	d
+D4F_USERFLAG1	d4.h	355;"	d
+D4HASH	d4.h	157;"	d
+D4HASH_THRESH	d4.h	156;"	d
+D4LG2MASK	d4.h	413;"	d
+D4NUMACCESSTYPES	d4.h	101;"	d
+D4PREFETCH	d4.h	102;"	d
+D4REFNSB	d4.h	436;"	d
+D4TRACE_END	tracein.h	58;"	d
+D4VAL	d4.h	367;"	d
+D4VERSION	d4.h	51;"	d
+D4XCOPYB	d4.h	99;"	d
+D4XINSTRN	d4.h	97;"	d
+D4XINSTRN	testing/p2b.c	101;"	d	file:
+D4XINVAL	d4.h	100;"	d
+D4XMISC	d4.h	98;"	d
+D4XMISC	testing/p2b.c	102;"	d	file:
+D4XREAD	d4.h	95;"	d
+D4XREAD	testing/p2b.c	99;"	d	file:
+D4XWRITE	d4.h	96;"	d
+D4XWRITE	testing/p2b.c	100;"	d	file:
+D4_BITMAP_RSIZE	d4.h	174;"	d
+D4_CACHEID	d4.h	378;"	d
+D4_CACHE_bogus_assoc	d4.h	387;"	d
+D4_CACHE_bogus_flags	d4.h	379;"	d
+D4_CACHE_bogus_lg2blocksize	d4.h	381;"	d
+D4_CACHE_bogus_lg2size	d4.h	385;"	d
+D4_CACHE_bogus_lg2subblocksize	d4.h	383;"	d
+D4_CACHE_bogus_numsets	d4.h	389;"	d
+D4_CACHE_bogus_offset	d4.h	406;"	d
+D4_CACHE_bogus_prefetch_abortpercent	d4.h	399;"	d
+D4_CACHE_bogus_prefetchf	d4.h	393;"	d
+D4_CACHE_bogus_replacementf	d4.h	391;"	d
+D4_CACHE_bogus_wallocf	d4.h	395;"	d
+D4_CACHE_bogus_wbackf	d4.h	397;"	d
+D4_EXT	cmdargs.c	75;"	d	file:
+D4_EXT	cmdargs.c	77;"	d	file:
+D4_HASHSIZE	d4.h	160;"	d
+D4_INLINE	d4.h	449;"	d
+D4_INLINE	d4.h	451;"	d
+D4_LIB	Makefile	/^D4_LIB = $(D4_SRC)\/libd4.a$/;"	m
+D4_MULTIBLOCK	d4.h	103;"	d
+D4_OPT	ref.c	94;"	d	file:
+D4_OPTS_bogus_ccc	d4.h	402;"	d
+D4_OPTS_bogus_prefetch_none	d4.h	403;"	d
+D4_OPT_	ref.c	93;"	d	file:
+D4_OPT__	ref.c	92;"	d	file:
+D4_REF_ONCE	ref.c	176;"	d	file:
+D4_REF_ONCE	ref.c	826;"	d	file:
+D4_REF_ONCE	ref.c	827;"	d	file:
+D4_SRC	Makefile	/^D4_SRC = $(srcdir)$/;"	m
+D4_TRIGGER_FIELD	d4.h	375;"	d
+D4_TRIGGER_FIELD_	d4.h	374;"	d
+D4_TRIGGER_bogus_assoc	d4.h	388;"	d
+D4_TRIGGER_bogus_flags	d4.h	380;"	d
+D4_TRIGGER_bogus_lg2blocksize	d4.h	382;"	d
+D4_TRIGGER_bogus_lg2size	d4.h	386;"	d
+D4_TRIGGER_bogus_lg2subblocksize	d4.h	384;"	d
+D4_TRIGGER_bogus_numsets	d4.h	390;"	d
+D4_TRIGGER_bogus_offset	d4.h	405;"	d
+D4_TRIGGER_bogus_prefetch_abortpercent	d4.h	400;"	d
+D4_TRIGGER_bogus_prefetchf	d4.h	394;"	d
+D4_TRIGGER_bogus_replacementf	d4.h	392;"	d
+D4_TRIGGER_bogus_wallocf	d4.h	396;"	d
+D4_TRIGGER_bogus_wbackf	d4.h	398;"	d
+D4_VAL_	d4.h	373;"	d
+D4_VAL__	d4.h	372;"	d
+DEBUG	Makefile	/^DEBUG=-DNDEBUG$/;"	m
+DEFSTR_assoc	cmdargs.c	99;"	d	file:
+DEFSTR_fetch	cmdargs.c	103;"	d	file:
+DEFSTR_informat	cmdargs.c	111;"	d	file:
+DEFSTR_multicore	cmdargs.c	109;"	d	file:
+DEFSTR_repl	cmdargs.c	101;"	d	file:
+DEFSTR_walloc	cmdargs.c	105;"	d	file:
+DEFSTR_wback	cmdargs.c	107;"	d	file:
+DEFVAL_assoc	cmdargs.c	98;"	d	file:
+DEFVAL_fetch	cmdargs.c	102;"	d	file:
+DEFVAL_informat	cmdargs.c	110;"	d	file:
+DEFVAL_multicore	cmdargs.c	108;"	d	file:
+DEFVAL_repl	cmdargs.c	100;"	d	file:
+DEFVAL_walloc	cmdargs.c	104;"	d	file:
+DEFVAL_wback	cmdargs.c	106;"	d	file:
+DSO_CLOSE	pixie64fmt.c	115;"	d	file:
+DSO_MAP_HI	pixie64fmt.c	112;"	d	file:
+DSO_MAP_LO	pixie64fmt.c	113;"	d	file:
+DSO_MAX_IOFFSET	pixie64fmt.c	116;"	d	file:
+DSO_MOVED_DYNAMIC	pixie64fmt.c	118;"	d	file:
+DSO_NAME	pixie64fmt.c	114;"	d	file:
+DSO_OPEN	pixie64fmt.c	111;"	d	file:
+LD	pixie32fmt.c	82;"	d	file:
+LD	pixie64fmt.c	96;"	d	file:
+LD	testing/p2b.c	83;"	d	file:
+LD	testing/p2d.c	88;"	d	file:
+LDC1	pixie32fmt.c	90;"	d	file:
+LDC1	pixie64fmt.c	104;"	d	file:
+LDC1	testing/p2b.c	91;"	d	file:
+LDC1	testing/p2d.c	96;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LIB_OBJ_LIST	Makefile	/^LIB_OBJ_LIST = ref.o misc.o$/;"	m
+LW	pixie32fmt.c	81;"	d	file:
+LW	pixie64fmt.c	95;"	d	file:
+LW	testing/p2b.c	82;"	d	file:
+LW	testing/p2d.c	87;"	d	file:
+LWC1	pixie32fmt.c	89;"	d	file:
+LWC1	pixie64fmt.c	103;"	d	file:
+LWC1	testing/p2b.c	90;"	d	file:
+LWC1	testing/p2d.c	95;"	d	file:
+MAX_LEV	cmdargs.h	58;"	d
+MIN	pixie64fmt.c	124;"	d	file:
+NONZERO	cmdmain.c	1144;"	d	file:
+NONZERO	cmdmain.c	1693;"	d	file:
+NSTACK	pixie64fmt.c	131;"	d	file:
+NUM_DATA_SEGMENTS	pixie64fmt.c	119;"	d	file:
+PIXIE_SWAB	pixie64fmt.c	127;"	d	file:
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+RECORD_SIZE	binaryfmt.c	65;"	d	file:
+RECORD_SIZE	testing/p2b.c	116;"	d	file:
+REF_UNDEF	pixie64fmt.c	110;"	d	file:
+SB	pixie32fmt.c	85;"	d	file:
+SB	pixie64fmt.c	99;"	d	file:
+SB	testing/p2b.c	86;"	d	file:
+SB	testing/p2d.c	91;"	d	file:
+SD	pixie32fmt.c	84;"	d	file:
+SD	pixie64fmt.c	98;"	d	file:
+SD	testing/p2b.c	85;"	d	file:
+SD	testing/p2d.c	90;"	d	file:
+SDC1	pixie32fmt.c	92;"	d	file:
+SDC1	pixie64fmt.c	106;"	d	file:
+SDC1	testing/p2b.c	93;"	d	file:
+SDC1	testing/p2d.c	98;"	d	file:
+SEGMENT_MAP_HI	pixie64fmt.c	120;"	d	file:
+SEGMENT_MAP_LO	pixie64fmt.c	121;"	d	file:
+SEGMENT_MOVED_STATIC	pixie64fmt.c	117;"	d	file:
+SEGMENT_SIZE	pixie64fmt.c	122;"	d	file:
+SH	pixie32fmt.c	86;"	d	file:
+SH	pixie64fmt.c	100;"	d	file:
+SH	testing/p2b.c	87;"	d	file:
+SH	testing/p2d.c	92;"	d	file:
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIZEOF_INT	config.h	18;"	d
+SIZEOF_SHORT	config.h	21;"	d
+STDC_HEADERS	config.h	15;"	d
+SW	pixie32fmt.c	83;"	d	file:
+SW	pixie64fmt.c	97;"	d	file:
+SW	testing/p2b.c	84;"	d	file:
+SW	testing/p2d.c	89;"	d	file:
+SWC1	pixie32fmt.c	91;"	d	file:
+SWC1	pixie64fmt.c	105;"	d	file:
+SWC1	testing/p2b.c	92;"	d	file:
+SWC1	testing/p2d.c	97;"	d	file:
+SWL	pixie32fmt.c	88;"	d	file:
+SWL	pixie64fmt.c	102;"	d	file:
+SWL	testing/p2b.c	89;"	d	file:
+SWL	testing/p2d.c	94;"	d	file:
+SWR	pixie32fmt.c	87;"	d	file:
+SWR	pixie64fmt.c	101;"	d	file:
+SWR	testing/p2b.c	88;"	d	file:
+SWR	testing/p2d.c	93;"	d	file:
+SYSCALL	pixie32fmt.c	95;"	d	file:
+SYSCALL	pixie64fmt.c	109;"	d	file:
+SYSCALL	testing/p2b.c	96;"	d	file:
+SYSCALL	testing/p2d.c	101;"	d	file:
+accesstype	d4.h	/^	char accesstype;$/;"	m	struct:__anon1
+addr	d4.h	/^	d4addr	addr;		\/* start address of range *\/$/;"	m	struct:__anon2
+address	d4.h	/^	d4addr address;$/;"	m	struct:__anon1
+arglist	cmdargs.h	/^struct arglist {$/;"	s
+args	cmdargs.c	/^struct arglist args[] = {$/;"	v	typeref:struct:arglist
+argscale_uint	cmdmain.c	/^argscale_uint (const char *arg, unsigned int *var)$/;"	f
+argscale_uintd	cmdmain.c	/^argscale_uintd (const char *arg, double *var)$/;"	f
+assoc	d4.h	/^	int assoc;		\/* set by the user *\/$/;"	m	struct:d4_cache_struct
+atype4	testing/p2d.c	/^char atype4[] = "rwimcv";	\/* extended din access types *\/$/;"	v
+atypes	testing/p2d.c	/^char atypes[] = "012345";	\/* din-style access types ("labels") *\/$/;"	v
+beginaddr	testing/p2b.c	/^unsigned long beginaddr = 0;	\/* discard before seeing this *\/$/;"	v
+bitmap	d4.h	/^	char	*bitmap;$/;"	m	struct:__anon2
+blockaddr	d4.h	/^	d4addr		blockaddr;	    \/* byte address of block *\/$/;"	m	struct:d4_stacknode_struct
+blockmiss	d4.h	/^	double blockmiss      [2 * D4NUMACCESSTYPES];$/;"	m	struct:d4_cache_struct
+bucket	d4.h	/^	struct d4_stacknode_struct *bucket; \/* singly-linked for hash collisions *\/$/;"	m	struct:d4_stacknode_struct	typeref:struct:d4_stacknode_struct::d4_stacknode_struct
+bytes_read	d4.h	/^	double bytes_read;$/;"	m	struct:d4_cache_struct
+bytes_written	d4.h	/^	double bytes_written;$/;"	m	struct:d4_cache_struct
+cacheid	d4.h	/^	int cacheid;		            \/* unique for each cache *\/$/;"	m	struct:d4_cache_struct
+cachep	d4.h	/^	struct d4_cache_struct *cachep;	    \/* which cache is this a part of *\/$/;"	m	struct:d4_stacknode_struct	typeref:struct:d4_stacknode_struct::d4_cache_struct
+cap_blockmiss	d4.h	/^	double cap_blockmiss  [2 * D4NUMACCESSTYPES];$/;"	m	struct:d4_cache_struct
+cap_miss	d4.h	/^	double cap_miss	      [2 * D4NUMACCESSTYPES];	\/* capacity misses *\/$/;"	m	struct:d4_cache_struct
+clog2	cmdmain.c	/^clog2 (unsigned int x)$/;"	f
+comp_blockmiss	d4.h	/^	double comp_blockmiss [2 * D4NUMACCESSTYPES];$/;"	m	struct:d4_cache_struct
+comp_miss	d4.h	/^	double comp_miss      [2 * D4NUMACCESSTYPES];	\/* compulsory misses *\/$/;"	m	struct:d4_cache_struct
+conf_blockmiss	d4.h	/^	double conf_blockmiss [2 * D4NUMACCESSTYPES];$/;"	m	struct:d4_cache_struct
+conf_miss	d4.h	/^	double conf_miss      [2 * D4NUMACCESSTYPES];	\/* conflict misses *\/$/;"	m	struct:d4_cache_struct
+cpuID	d4.h	/^	unsigned int cpuID;$/;"	m	struct:__anon1
+cust_argc	cmdmain.c	/^int cust_argc = 1;			\/* how many args for custom version *\/$/;"	v
+cust_argv	cmdmain.c	/^const char **cust_argv;			\/* for args to pass to custom version *\/$/;"	v
+custom_custom	cmdmain.c	/^custom_custom (const struct arglist *adesc, FILE *hfile)$/;"	f
+customf	cmdargs.h	/^	void (*customf)(const struct arglist *, FILE *);$/;"	m	struct:arglist
+customize_caches	cmdmain.c	/^customize_caches()$/;"	f
+customname	cmdmain.c	/^char *customname;			\/* for -custom, name of executable *\/$/;"	v
+customstring	cmdargs.h	/^	const char *customstring; \/* arg to use for custom version *\/$/;"	m	struct:arglist
+d4_allcaches	misc.c	/^d4cache *d4_allcaches;$/;"	v
+d4_cache_struct	d4.h	/^typedef struct d4_cache_struct {$/;"	s
+d4_cust_vals	ref.c	/^long *d4_cust_vals[1] = { NULL };$/;"	v
+d4_dopending	misc.c	/^d4_dopending (d4cache *c, d4pendstack *newm)$/;"	f
+d4_find	misc.c	/^d4_find (d4cache *c, int stacknum, d4addr blockaddr)$/;"	f
+d4_invblock	misc.c	/^d4_invblock (d4cache *c, int stacknum, d4stacknode *ptr)$/;"	f
+d4_invinfcache	misc.c	/^d4_invinfcache (d4cache *c, const d4memref *m)$/;"	f
+d4_ncustom	ref.c	/^int d4_ncustom = 0;$/;"	v
+d4_pendstack	d4.h	/^typedef struct d4_pendstack {$/;"	s
+d4_splitm	ref.c	/^D4_INLINE d4memref d4_splitm (d4cache *c, d4memref mr, d4addr ba)$/;"	f
+d4_stackhash_struct	d4.h	/^struct d4_stackhash_struct {$/;"	s
+d4_stackhead_struct	d4.h	/^typedef struct d4_stackhead_struct {$/;"	s
+d4_stacknode_struct	d4.h	/^typedef struct d4_stacknode_struct {$/;"	s
+d4_unhash	misc.c	/^d4_unhash (d4cache *c, int stacknum, d4stacknode *s)$/;"	f
+d4_wbblock	misc.c	/^d4_wbblock (d4cache *c, d4stacknode *ptr, const int lg2sbsize)$/;"	f
+d4addr	d4.h	/^typedef D4ADDR d4addr;$/;"	t
+d4cache	d4.h	/^} d4cache;$/;"	t	typeref:struct:d4_cache_struct
+d4copyback	misc.c	/^d4copyback (d4cache *c, const d4memref *m, int prop)$/;"	f
+d4custom	ref.c	/^const int d4custom = D4CUSTOM;$/;"	v
+d4customize	misc.c	/^d4customize (FILE *f)$/;"	f
+d4dummy_crash	ref.c	/^static void d4dummy_crash (char *name)$/;"	f	file:
+d4findnth	misc.c	/^d4findnth (d4cache *c, int stacknum, int n)$/;"	f
+d4freelist	misc.c	/^d4stacknode d4freelist;$/;"	v
+d4get_mref	misc.c	/^d4get_mref()$/;"	f
+d4hash	misc.c	/^d4hash (d4cache *c, int stacknum, d4stacknode *s)$/;"	f
+d4infcache	ref.c	/^static int d4infcache (d4cache *c, d4memref m)$/;"	f	file:
+d4init_prefetch_always	misc.c	/^d4init_prefetch_always (d4cache *c, int dist, int abortpct)$/;"	f
+d4init_prefetch_loadforw	misc.c	/^d4init_prefetch_loadforw (d4cache *c, int dist, int abortpct)$/;"	f
+d4init_prefetch_miss	misc.c	/^d4init_prefetch_miss (d4cache *c, int dist, int abortpct)$/;"	f
+d4init_prefetch_none	misc.c	/^d4init_prefetch_none (d4cache *c)$/;"	f
+d4init_prefetch_subblock	misc.c	/^d4init_prefetch_subblock (d4cache *c, int dist, int abortpct)$/;"	f
+d4init_prefetch_tagged	misc.c	/^d4init_prefetch_tagged (d4cache *c, int dist, int abortpct)$/;"	f
+d4init_rep_fifo	misc.c	/^d4init_rep_fifo (d4cache *c)$/;"	f
+d4init_rep_lru	misc.c	/^d4init_rep_lru (d4cache *c)$/;"	f
+d4init_rep_random	misc.c	/^d4init_rep_random (d4cache *c)$/;"	f
+d4init_walloc_always	misc.c	/^d4init_walloc_always (d4cache *c)$/;"	f
+d4init_walloc_never	misc.c	/^d4init_walloc_never (d4cache *c)$/;"	f
+d4init_walloc_nofetch	misc.c	/^d4init_walloc_nofetch (d4cache *c)$/;"	f
+d4init_wback_always	misc.c	/^d4init_wback_always (d4cache *c)$/;"	f
+d4init_wback_never	misc.c	/^d4init_wback_never (d4cache *c)$/;"	f
+d4init_wback_nofetch	misc.c	/^d4init_wback_nofetch (d4cache *c)$/;"	f
+d4invalidate	misc.c	/^d4invalidate (d4cache *c, const d4memref *m, int prop)$/;"	f
+d4memref	d4.h	/^} d4memref;$/;"	t	typeref:struct:__anon1
+d4movetobot	misc.c	/^d4movetobot (d4cache *c, int stacknum, d4stacknode *ptr)$/;"	f
+d4movetotop	misc.c	/^d4movetotop (d4cache *c, int stacknum, d4stacknode *ptr)$/;"	f
+d4new	misc.c	/^d4new (d4cache *larger)$/;"	f
+d4nnodes	misc.c	/^int d4nnodes;$/;"	v
+d4pendfree	misc.c	/^d4pendstack *d4pendfree;$/;"	v
+d4pendstack	d4.h	/^} d4pendstack;$/;"	t	typeref:struct:d4_pendstack
+d4prefetch_always	ref.c	/^D4_INLINE d4pendstack * d4prefetch_always (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_always	ref.c	/^d4pendstack *d4prefetch_always (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_loadforw	ref.c	/^D4_INLINE d4pendstack * d4prefetch_loadforw (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_loadforw	ref.c	/^d4pendstack *d4prefetch_loadforw (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_miss	ref.c	/^D4_INLINE d4pendstack * d4prefetch_miss (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_miss	ref.c	/^d4pendstack *d4prefetch_miss (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_none	ref.c	/^D4_INLINE d4pendstack * d4prefetch_none (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_none	ref.c	/^d4pendstack *d4prefetch_none (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_subblock	ref.c	/^D4_INLINE d4pendstack * d4prefetch_subblock (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_subblock	ref.c	/^d4pendstack *d4prefetch_subblock (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_tagged	ref.c	/^D4_INLINE d4pendstack * d4prefetch_tagged (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4prefetch_tagged	ref.c	/^d4pendstack *d4prefetch_tagged (d4cache *c, d4memref m, int miss, d4stacknode *stackptr)$/;"	f
+d4put_mref	misc.c	/^d4put_mref (d4pendstack *m)$/;"	f
+d4range	d4.h	/^} d4range;$/;"	t	typeref:struct:__anon2
+d4ref	d4.h	471;"	d
+d4ref	ref.c	/^void d4ref (d4cache *c, d4memref m)$/;"	f
+d4ref	ref.c	/^void d4ref (d4cache *c, d4memref mr)$/;"	f
+d4ref	ref.c	157;"	d	file:
+d4rep_fifo	ref.c	/^D4_INLINE d4stacknode * d4rep_fifo (d4cache *c, int stacknum, d4memref m, d4stacknode *ptr)$/;"	f
+d4rep_fifo	ref.c	/^d4stacknode *d4rep_fifo (d4cache *c, int stacknum, d4memref m, d4stacknode *ptr)$/;"	f
+d4rep_lru	ref.c	/^D4_INLINE d4stacknode * d4rep_lru (d4cache *c, int stacknum, d4memref m, d4stacknode *ptr)$/;"	f
+d4rep_lru	ref.c	/^d4stacknode *d4rep_lru (d4cache *c, int stacknum, d4memref m, d4stacknode *ptr)$/;"	f
+d4rep_random	ref.c	/^D4_INLINE d4stacknode * d4rep_random (d4cache *c, int stacknum, d4memref m, d4stacknode *ptr)$/;"	f
+d4rep_random	ref.c	/^d4stacknode *d4rep_random (d4cache *c, int stacknum, d4memref m, d4stacknode *ptr)$/;"	f
+d4setup	misc.c	/^d4setup()$/;"	f
+d4stackhash	misc.c	/^struct d4_stackhash_struct d4stackhash;$/;"	v	typeref:struct:d4_stackhash_struct
+d4stackhead	d4.h	/^} d4stackhead;$/;"	t	typeref:struct:d4_stackhead_struct
+d4stacknode	d4.h	/^} d4stacknode;$/;"	t	typeref:struct:d4_stacknode_struct
+d4walloc_always	ref.c	/^D4_INLINE int d4walloc_always (d4cache *c, d4memref m)$/;"	f
+d4walloc_always	ref.c	/^int d4walloc_always (d4cache *c, d4memref m)$/;"	f
+d4walloc_impossible	misc.c	/^d4walloc_impossible (d4cache *c, d4memref m)$/;"	f
+d4walloc_never	ref.c	/^D4_INLINE int d4walloc_never (d4cache *c, d4memref m)$/;"	f
+d4walloc_never	ref.c	/^int d4walloc_never (d4cache *c, d4memref m)$/;"	f
+d4walloc_nofetch	ref.c	/^D4_INLINE int d4walloc_nofetch (d4cache *c, d4memref m)$/;"	f
+d4walloc_nofetch	ref.c	/^int d4walloc_nofetch (d4cache *c, d4memref m)$/;"	f
+d4wback_always	ref.c	/^D4_INLINE int d4wback_always (d4cache *c, d4memref m, int setnumber, d4stacknode *ptr, int walloc)$/;"	f
+d4wback_always	ref.c	/^int d4wback_always (d4cache *c, d4memref m, int setnumber, d4stacknode *ptr, int walloc)$/;"	f
+d4wback_impossible	misc.c	/^d4wback_impossible (d4cache *c, d4memref m, int setnumber, d4stacknode *ptr, int walloc)$/;"	f
+d4wback_never	ref.c	/^D4_INLINE int d4wback_never (d4cache *c, d4memref m, int setnumber, d4stacknode *ptr, int walloc)$/;"	f
+d4wback_never	ref.c	/^int d4wback_never (d4cache *c, d4memref m, int setnumber, d4stacknode *ptr, int walloc)$/;"	f
+d4wback_nofetch	ref.c	/^D4_INLINE int d4wback_nofetch (d4cache *c, d4memref m, int setnumber, d4stacknode *ptr, int walloc)$/;"	f
+d4wback_nofetch	ref.c	/^int d4wback_nofetch (d4cache *c, d4memref m, int setnumber, d4stacknode *ptr, int walloc)$/;"	f
+defstr	cmdargs.h	/^	char *defstr;		  \/* default value, as a string *\/$/;"	m	struct:arglist
+die	cmdmain.c	/^die (const char *fmt, ...)$/;"	f
+dirty	d4.h	/^	unsigned int	dirty;		    \/* bit for each subblock *\/$/;"	m	struct:d4_stacknode_struct
+discard	testing/p2b.c	/^int discard = 0;$/;"	v
+do1arg	cmdmain.c	/^do1arg (const char *opt, const char *arg)$/;"	f
+do1stats	cmdmain.c	/^do1stats (d4cache *c)$/;"	f
+doargs	cmdmain.c	/^doargs (int argc, char **argv)$/;"	f
+dostats	cmdmain.c	/^dostats()$/;"	f
+down	d4.h	/^	struct d4_stacknode_struct *down;   \/* ptr to less recently used node *\/$/;"	m	struct:d4_stacknode_struct	typeref:struct:d4_stacknode_struct::d4_stacknode_struct
+downstream	d4.h	/^	struct d4_cache_struct *downstream;$/;"	m	struct:d4_cache_struct	typeref:struct:d4_cache_struct::d4_cache_struct
+endaddr	testing/p2b.c	/^unsigned long endaddr = 0;	\/* discard after seeing this *\/$/;"	v
+fetch	d4.h	/^	double fetch	      [2 * D4NUMACCESSTYPES];$/;"	m	struct:d4_cache_struct
+flag4	testing/p2d.c	/^int flag4;	\/* set if we are to produce extended din format *\/$/;"	v
+flags	d4.h	/^	int flags;$/;"	m	struct:d4_cache_struct
+flushcount	cmdargs.c	/^double flushcount;$/;"	v
+help	cmdargs.h	/^	void (*help)(const struct arglist *);$/;"	m	struct:arglist
+help_0arg	cmdmain.c	/^help_0arg (const struct arglist *adesc)$/;"	f
+help_addr	cmdmain.c	/^help_addr (const struct arglist *adesc)$/;"	f
+help_char	cmdmain.c	/^help_char (const struct arglist *adesc)$/;"	f
+help_informat	cmdargs.c	/^help_informat (const struct arglist *adesc)$/;"	f
+help_scale_uintd	cmdmain.c	/^help_scale_uintd (const struct arglist *adesc)$/;"	f
+help_string	cmdmain.c	/^help_string (const struct arglist *adesc)$/;"	f
+help_trace_format	tracein.c	/^help_trace_format (int indent)$/;"	f
+help_uint	cmdmain.c	/^help_uint (const struct arglist *adesc)$/;"	f
+helpstring	cmdargs.h	/^	const char *helpstring;	  \/* string for help line *\/$/;"	m	struct:arglist
+inbuf	testing/p2b.c	/^unsigned char inbuf[8192];$/;"	v
+inbuf	testing/p2d.c	/^unsigned char inbuf[8192];$/;"	v
+informat	cmdargs.c	/^int informat = DEFVAL_informat;$/;"	v
+init_1cache	cmdargs.c	/^init_1cache (d4cache *c, int lev, int idu)$/;"	f
+initialize_caches	cmdmain.c	/^initialize_caches (d4cache **icachep, d4cache **dcachep)$/;"	f
+input_function	tracein.c	/^d4memref (*input_function) (void);$/;"	v
+isOK	d4.h	/^	char isOK;$/;"	m	struct:__anon1
+levcache	cmdmain.c	/^d4cache *levcache[3][MAX_LEV];		\/* to locate cache by level and type *\/$/;"	v
+level_assoc	cmdargs.c	/^D4_EXT unsigned int level_assoc[3][MAX_LEV];$/;"	v
+level_blocksize	cmdargs.c	/^D4_EXT unsigned int level_blocksize[3][MAX_LEV];$/;"	v
+level_doccc	cmdargs.c	/^D4_EXT int level_doccc[3][MAX_LEV];$/;"	v
+level_fetch	cmdargs.c	/^D4_EXT int level_fetch[3][MAX_LEV];$/;"	v
+level_idu	cmdmain.c	/^level_idu (const char *opt, int *levelp, int *idup)$/;"	f
+level_multicore	cmdargs.c	/^D4_EXT int level_multicore[3][MAX_LEV];$/;"	v
+level_prefetch_abortpercent	cmdargs.c	/^D4_EXT int level_prefetch_abortpercent[3][MAX_LEV];$/;"	v
+level_prefetch_distance	cmdargs.c	/^int level_prefetch_distance[3][MAX_LEV];$/;"	v
+level_replacement	cmdargs.c	/^D4_EXT int level_replacement[3][MAX_LEV];$/;"	v
+level_size	cmdargs.c	/^D4_EXT unsigned int level_size[3][MAX_LEV];$/;"	v
+level_subblocksize	cmdargs.c	/^D4_EXT unsigned int level_subblocksize[3][MAX_LEV];$/;"	v
+level_walloc	cmdargs.c	/^D4_EXT int level_walloc[3][MAX_LEV];$/;"	v
+level_wback	cmdargs.c	/^D4_EXT int level_wback[3][MAX_LEV];$/;"	v
+lg2blocksize	d4.h	/^	int lg2blocksize;	\/* set by the user *\/$/;"	m	struct:d4_cache_struct
+lg2size	d4.h	/^	int lg2size;		\/* set by the user *\/$/;"	m	struct:d4_cache_struct
+lg2subblocksize	d4.h	/^	int lg2subblocksize;	\/* set by the user *\/$/;"	m	struct:d4_cache_struct
+link	d4.h	/^	struct d4_cache_struct *link;   \/* linked list of all caches *\/$/;"	m	struct:d4_cache_struct	typeref:struct:d4_cache_struct::d4_cache_struct
+m	d4.h	/^	d4memref m;$/;"	m	struct:d4_pendstack
+main	cmdmain.c	/^int main (int argc, char **argv)$/;"	f
+main	testing/p2b.c	/^main (int argc, char **argv)$/;"	f
+main	testing/p2d.c	/^main (int argc, char **argv)$/;"	f
+match	cmdargs.h	/^	int (*match)(const char *opt, const struct arglist *);$/;"	m	struct:arglist
+match_0arg	cmdmain.c	/^match_0arg (const char *opt, const struct arglist *adesc)$/;"	f
+match_1arg	cmdmain.c	/^match_1arg (const char *opt, const struct arglist *adesc)$/;"	f
+match_bogus	cmdmain.c	/^match_bogus (const char *opt, const struct arglist *adesc)$/;"	f
+maxcount	cmdargs.c	/^double maxcount;$/;"	v
+maxlevel	cmdargs.c	/^D4_EXT int maxlevel;	\/* the highest level actually used *\/$/;"	v
+maxranges	d4.h	/^	int		maxranges;$/;"	m	struct:d4_cache_struct
+mem	cmdmain.c	/^d4cache *mem;				\/* which cache represents simulated memory? *\/$/;"	v
+miss	d4.h	/^	double miss	          [2 * D4NUMACCESSTYPES];$/;"	m	struct:d4_cache_struct
+modf	configure	/^modf()$/;"	f
+multiblock	d4.h	/^    double multiblock;$/;"	m	struct:d4_cache_struct
+n	d4.h	/^	int n;			\/* size of stack (== 1 + assoc) *\/$/;"	m	struct:d4_stackhead_struct
+name	d4.h	/^	char *name;		                \/* mostly for printing *\/$/;"	m	struct:d4_cache_struct
+name_prefetch	d4.h	/^	char		*name_prefetch;$/;"	m	struct:d4_cache_struct
+name_replacement	d4.h	/^	char		*name_replacement;	\/* for printing *\/$/;"	m	struct:d4_cache_struct
+name_walloc	d4.h	/^	char		*name_walloc;$/;"	m	struct:d4_cache_struct
+name_wback	d4.h	/^	char		*name_wback;$/;"	m	struct:d4_cache_struct
+nargs	cmdargs.c	/^int nargs = sizeof(args) \/ sizeof(args[0]);$/;"	v
+next	d4.h	/^	struct d4_pendstack *next;$/;"	m	struct:d4_pendstack	typeref:struct:d4_pendstack::d4_pendstack
+next_trace_item	cmdmain.c	/^next_trace_item()$/;"	f
+nranges	d4.h	/^	int		nranges;$/;"	m	struct:d4_cache_struct
+numsets	d4.h	/^	int numsets;		\/* this one is derived, not set by the user *\/$/;"	m	struct:d4_cache_struct
+obuf	testing/p2b.c	/^static char obuf[BUFSIZ];$/;"	v	file:
+off_trigger	cmdargs.c	/^long off_trigger;$/;"	v
+on_trigger	cmdargs.c	/^long on_trigger;$/;"	v
+onstack	d4.h	/^	int		onstack;	    \/* which stack is node on? *\/$/;"	m	struct:d4_stacknode_struct
+optr	testing/p2b.c	/^static int optr;$/;"	v	file:
+optstring	cmdargs.h	/^	const char *optstring;	  \/* string to match, without -ln-idu if applicable *\/$/;"	m	struct:arglist
+optstringmax	cmdmain.c	/^int optstringmax;			\/* for help_* functions *\/$/;"	v
+out	testing/p2b.c	/^out(unsigned long addr, char atype, char size)$/;"	f
+pad	cmdargs.h	/^	int pad;		  \/* how many extra chars will help print? *\/$/;"	m	struct:arglist
+pcustom_0arg	cmdmain.c	/^pcustom_0arg (const struct arglist *adesc, FILE *hfile)$/;"	f
+pcustom_char	cmdmain.c	/^pcustom_char (const struct arglist *adesc, FILE *hfile)$/;"	f
+pcustom_uint	cmdmain.c	/^pcustom_uint (const struct arglist *adesc, FILE *hfile)$/;"	f
+pending	d4.h	/^	d4pendstack *pending;	        \/* stack for prefetch etc. *\/$/;"	m	struct:d4_cache_struct
+phelp_0arg	cmdmain.c	/^phelp_0arg (const struct arglist *adesc)$/;"	f
+phelp_char	cmdmain.c	/^phelp_char (const struct arglist *adesc)$/;"	f
+phelp_fetch	cmdargs.c	/^phelp_fetch (const struct arglist *adesc)$/;"	f
+phelp_replacement	cmdargs.c	/^phelp_replacement (const struct arglist *adesc)$/;"	f
+phelp_scale_pow2	cmdmain.c	/^phelp_scale_pow2 (const struct arglist *adesc)$/;"	f
+phelp_scale_uint	cmdmain.c	/^phelp_scale_uint (const struct arglist *adesc)$/;"	f
+phelp_uint	cmdmain.c	/^phelp_uint (const struct arglist *adesc)$/;"	f
+phelp_walloc	cmdargs.c	/^phelp_walloc (const struct arglist *adesc)$/;"	f
+phelp_wback	cmdargs.c	/^phelp_wback (const struct arglist *adesc)$/;"	f
+pmatch_0arg	cmdmain.c	/^pmatch_0arg (const char *opt, const struct arglist *adesc)$/;"	f
+pmatch_1arg	cmdmain.c	/^pmatch_1arg (const char *opt, const struct arglist *adesc)$/;"	f
+pop_ref	pixie32fmt.c	108;"	d	file:
+pop_ref	pixie64fmt.c	142;"	d	file:
+prefetch_abortpercent	d4.h	/^	int		prefetch_abortpercent;$/;"	m	struct:d4_cache_struct
+prefetch_distance	d4.h	/^	int		prefetch_distance;	\/* specific to built-in prefetch policies *\/$/;"	m	struct:d4_cache_struct
+prefetchf	d4.h	/^	d4pendstack	*(*prefetchf) (struct d4_cache_struct *, d4memref,$/;"	m	struct:d4_cache_struct
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+procID	d4.h	/^	unsigned int procID;$/;"	m	struct:__anon1
+progname	cmdmain.c	/^char *progname = "dineroIV";		\/* for error messages *\/$/;"	v
+progname	testing/p2b.c	/^char *progname = "p2b";$/;"	v
+progname	testing/p2d.c	/^char *progname = "p2d";$/;"	v
+psummary_0arg	cmdmain.c	/^psummary_0arg (const struct arglist *adesc, FILE *f)$/;"	f
+psummary_char	cmdmain.c	/^psummary_char (const struct arglist *adesc, FILE *f)$/;"	f
+psummary_luint	cmdmain.c	/^psummary_luint (const struct arglist *adesc, FILE *f)$/;"	f
+psummary_uint	cmdmain.c	/^psummary_uint (const struct arglist *adesc, FILE *f)$/;"	f
+push_ref	pixie32fmt.c	101;"	d	file:
+push_ref	pixie64fmt.c	135;"	d	file:
+pval_0arg	cmdmain.c	/^pval_0arg (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+pval_char	cmdmain.c	/^pval_char (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+pval_scale_pow2	cmdmain.c	/^pval_scale_pow2 (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+pval_scale_uint	cmdmain.c	/^pval_scale_uint (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+pval_uint	cmdmain.c	/^pval_uint (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+random	configure	/^random()$/;"	f
+ranges	d4.h	/^	d4range		*ranges;$/;"	m	struct:d4_cache_struct
+ref	d4.h	/^	void (*ref)(struct d4_cache_struct *, d4memref);	\/* d4ref or custom version *\/$/;"	m	struct:d4_cache_struct
+referenced	d4.h	/^	unsigned int	referenced;	    \/* bit for each subblock *\/$/;"	m	struct:d4_stacknode_struct
+replacementf	d4.h	/^	d4stacknode	*(*replacementf) (struct d4_cache_struct *, int stacknum,$/;"	m	struct:d4_cache_struct
+shorthelp	cmdmain.c	/^shorthelp (const char *fmt, ...)$/;"	f
+siblings	d4.h	/^	struct d4_cache_struct *siblings;$/;"	m	struct:d4_cache_struct	typeref:struct:d4_cache_struct::d4_cache_struct
+size	d4.h	/^	int size;		\/* size of the hash table *\/$/;"	m	struct:d4_stackhash_struct
+size	d4.h	/^	unsigned short size;		\/* of memory referenced, in bytes *\/$/;"	m	struct:__anon1
+skipcount	cmdargs.c	/^double skipcount;$/;"	v
+sptr	pixie32fmt.c	/^static d4memref *sptr = stack;	\/* stack pointer *\/$/;"	v	file:
+sptr	pixie64fmt.c	/^static d4memref *sptr = stack;	\/* stack pointer *\/$/;"	v	file:
+srcdir	Makefile	/^srcdir = .$/;"	m
+stack	d4.h	/^	d4stackhead *stack;	            \/* the priority stacks for this cache *\/$/;"	m	struct:d4_cache_struct
+stack	pixie32fmt.c	/^static d4memref stack[16];	\/* to store deferred references *\/$/;"	v	file:
+stack	pixie64fmt.c	/^static d4memref stack[NSTACK];	\/* to store deferred references *\/$/;"	v	file:
+stat_idcombine	cmdargs.c	/^int stat_idcombine;$/;"	v
+stat_interval	cmdargs.c	/^double stat_interval;$/;"	v
+sumf	cmdargs.h	/^	void (*sumf)(const struct arglist *, FILE *);$/;"	m	struct:arglist
+summarize_caches	cmdmain.c	/^summarize_caches (d4cache *ci, d4cache *cd)$/;"	f
+summary_0arg	cmdmain.c	/^summary_0arg (const struct arglist *adesc, FILE *f)$/;"	f
+summary_addr	cmdmain.c	/^summary_addr (const struct arglist *adesc, FILE *f)$/;"	f
+summary_char	cmdmain.c	/^summary_char (const struct arglist *adesc, FILE *f)$/;"	f
+summary_uint	cmdmain.c	/^summary_uint (const struct arglist *adesc, FILE *f)$/;"	f
+summary_uintd	cmdmain.c	/^summary_uintd (const struct arglist *adesc, FILE *f)$/;"	f
+table	d4.h	/^	d4stacknode **table;	\/* the table itself, malloced *\/$/;"	m	struct:d4_stackhash_struct
+top	d4.h	/^	d4stacknode *top;	\/* the "beginning" of the stack *\/$/;"	m	struct:d4_stackhead_struct
+tracein_binary	binaryfmt.c	/^tracein_binary()$/;"	f
+tracein_din	dinfmt.c	/^tracein_din()$/;"	f
+tracein_pixie32	pixie32fmt.c	/^tracein_pixie32()$/;"	f
+tracein_pixie64	pixie64fmt.c	/^tracein_pixie64()$/;"	f
+tracein_xdin	xdinfmt.c	/^tracein_xdin()$/;"	f
+unspec	cmdargs.c	/^unspec (int lev, int idu, char *name, void *var, char *suggest)$/;"	f
+up	d4.h	/^	struct d4_stacknode_struct *up;     \/* ptr to more recently used node *\/$/;"	m	struct:d4_stacknode_struct	typeref:struct:d4_stacknode_struct::d4_stacknode_struct
+usage	testing/p2b.c	/^char usage[] = "Usage: %s [-b beginaddr] [-e endaddr]\\n";$/;"	v
+usage	testing/p2d.c	/^char usage[] = "Usage: %s [-4] [-b beginaddr] [-e endaddr]\\n";$/;"	v
+val_0arg	cmdmain.c	/^val_0arg (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_addr	cmdmain.c	/^val_addr (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_char	cmdmain.c	/^val_char (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_help	cmdmain.c	/^val_help (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_helpcr	cmdmain.c	/^val_helpcr (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_helpd3	cmdmain.c	/^val_helpd3 (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_helpw	cmdmain.c	/^val_helpw (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_scale_pow2	cmdmain.c	/^val_scale_pow2 (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_scale_uint	cmdmain.c	/^val_scale_uint (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_scale_uintd	cmdmain.c	/^val_scale_uintd (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_string	cmdmain.c	/^val_string (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+val_uint	cmdmain.c	/^val_uint (const char *opt, const char *arg, const struct arglist *adesc)$/;"	f
+valf	cmdargs.h	/^	void (*valf)(const char *opt, const char *arg, const struct arglist *);$/;"	m	struct:arglist
+valid	d4.h	/^	unsigned int	valid;		    \/* bit for each subblock *\/$/;"	m	struct:d4_stacknode_struct
+var	cmdargs.h	/^	void *var;		  \/* scalar variable or array to modify *\/$/;"	m	struct:arglist
+verify_options	cmdargs.c	/^verify_options()$/;"	f
+verify_trace_format	tracein.c	/^verify_trace_format()$/;"	f
+wallocf	d4.h	/^	int		(*wallocf) (struct d4_cache_struct *, d4memref);$/;"	m	struct:d4_cache_struct
+wbackf	d4.h	/^	int		(*wbackf) (struct d4_cache_struct *, d4memref, int,$/;"	m	struct:d4_cache_struct

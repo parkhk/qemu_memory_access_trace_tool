@@ -1,0 +1,1 @@
+./dineroIV -l1-isize 32k -l1-dsize 32k -l2-usize 256k -l3-usize 8M -l1-iassoc 4 -l1-dassoc 4 -l2-uassoc 8 -l3-uassoc 16 -l1-ibsize 64 -l1-dbsize 64 -l2-ubsize 64 -l3-ubsize 64 -informat d < memtrace.din

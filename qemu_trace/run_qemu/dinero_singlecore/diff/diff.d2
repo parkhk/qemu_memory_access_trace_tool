@@ -1,0 +1,299 @@
+diff -ruN dinero/cmdmain.c dinero_trace/cmdmain.c
+--- dinero/cmdmain.c	2014-06-02 16:10:32.400313230 -0400
++++ dinero_trace/cmdmain.c	2014-06-02 16:10:32.614310293 -0400
+@@ -1934,6 +1934,7 @@
+ 	d4cache *ci, *cd;
+ 	double tmaxcount = 0, tintcount;
+ 	double flcount;
++	unsigned long i;
+ 
+ 	if (argc > 0) {
+ 		char *cp;
+@@ -1967,11 +1968,19 @@
+ 
+ 	summarize_caches (ci, cd);
+ 
++	//parkhk
++	trace_read = fopen("cache_trace_read","w");
++	trace_write = fopen("cache_trace_write","w");
++	trace_inst = fopen("cache_trace_inst","w");
++
+ 	printf ("\n---Simulation begins.\n");
+ 	tintcount = stat_interval;
+ 	flcount = flushcount;
+ 	while (1) {
+ 		r = next_trace_item();
++		//parkhk
++		trace_order++;
++
+ 		if (r.accesstype == D4TRACE_END)
+ 			goto done;
+ 		if (maxcount != 0 && tmaxcount >= maxcount) {
+@@ -1979,6 +1988,13 @@
+ 			break;
+ 		}
+ 		switch (r.accesstype) {
++		case D4XREAD:	  cpu_read_cnt[r.address>>6]++;  break;
++		case D4XWRITE:	  cpu_write_cnt[r.address>>6]++;  break;
++		case D4XINSTRN:	  cpu_inst_cnt[r.address>>6]++;  break;
++		default:	  printf("Warning unknown operation!!(%u)\n", r.accesstype);  break;
++		}
++
++		switch (r.accesstype) {
+ 		case D4XINSTRN:	  d4ref (ci, r);  break;
+ 		case D4XINVAL:	  d4ref (ci, r);  /* fall through */
+ 		default:	  d4ref (cd, r);  break;
+@@ -2009,6 +2025,48 @@
+ 	d4ref (cd, r);
+ 	printf ("---Simulation complete.\n");
+ 	dostats();
+-	printf ("---Execution complete.\n");
++	printf ("---Execution complete.(l3 miss check %ld)\n", trace_l3);
++	//parkhk
++	fclose(trace_read);
++	fclose(trace_write);
++	fclose(trace_inst);
++	trace_read = fopen("cpu_read_cnt","w");
++	trace_write = fopen("cpu_write_cnt","w");
++	trace_inst = fopen("cpu_inst_cnt","w");
++	for(i=0;i<TRACE_MEMSIZE;i++){
++		if(cpu_read_cnt[i] > max_cpu_read_cnt )
++			max_cpu_read_cnt = cpu_read_cnt[i]; 
++		if(cpu_write_cnt[i] > max_cpu_write_cnt )
++			max_cpu_write_cnt = cpu_write_cnt[i]; 
++		if(cpu_inst_cnt[i] > max_cpu_inst_cnt )
++			max_cpu_inst_cnt = cpu_inst_cnt[i]; 
++		fprintf(trace_read, "%ld %ld\n", i<<6, cpu_read_cnt[i]);
++		fprintf(trace_write, "%ld %ld\n", i<<6, cpu_write_cnt[i]);
++		fprintf(trace_inst, "%ld %ld\n", i<<6, cpu_inst_cnt[i]);
++	}
++	fclose(trace_read);
++	fclose(trace_write);
++	fclose(trace_inst);
++	trace_read = fopen("mem_read_cnt","w");
++	trace_write = fopen("mem_write_cnt","w");
++	trace_inst = fopen("mem_inst_cnt","w");
++	for(i=0;i<TRACE_MEMSIZE;i++){
++		if(mem_read_cnt[i] > max_mem_read_cnt )
++			max_mem_read_cnt = mem_read_cnt[i]; 
++		if(mem_write_cnt[i] > max_mem_write_cnt )
++			max_mem_write_cnt = mem_write_cnt[i]; 
++		if(mem_inst_cnt[i] > max_mem_inst_cnt )
++			max_mem_inst_cnt = mem_inst_cnt[i]; 
++		fprintf(trace_read, "%ld %ld\n", i<<6, mem_read_cnt[i]);
++		fprintf(trace_write, "%ld %ld\n", i<<6, mem_write_cnt[i]);
++		fprintf(trace_inst, "%ld %ld\n", i<<6, mem_inst_cnt[i]);
++	}
++	fclose(trace_read);
++	fclose(trace_write);
++	fclose(trace_inst);
++	 printf("before read max : %lu || after read max : %lu\n", max_cpu_read_cnt, max_mem_read_cnt);
++	 printf("before write max : %lu || after write max : %lu\n", max_cpu_write_cnt, max_mem_write_cnt);
++	 printf("before inst max : %lu || after inst max : %lu\n", max_cpu_inst_cnt, max_mem_inst_cnt);
++
+ 	return 0;
+ }
+diff -ruN dinero/d4.h dinero_trace/d4.h
+--- dinero/d4.h	2014-06-02 16:10:32.365313711 -0400
++++ dinero_trace/d4.h	2014-06-02 16:10:32.597310526 -0400
+@@ -58,7 +58,8 @@
+ 	/* Type of a simulated address */
+ #ifndef D4ADDR
+ #if SIZEOF_INT >= SIZEOF_VOIDP
+-#define D4ADDR unsigned int
++#define D4ADDR unsigned long
++//#define D4ADDR unsigned int 
+ #else
+ #define D4ADDR unsigned long
+ #endif
+@@ -79,7 +80,26 @@
+ 	unsigned short	size;		/* of memory referenced, in bytes */
+ } d4memref;
+ 
+-
++//parkhk
++#define TRACE_MEMSIZE 0x800000
++FILE *trace_read;
++FILE *trace_write;
++FILE *trace_inst;
++unsigned long trace_order;
++unsigned long trace_l3;
++unsigned long cpu_read_cnt[TRACE_MEMSIZE];
++unsigned long cpu_write_cnt[TRACE_MEMSIZE];
++unsigned long cpu_inst_cnt[TRACE_MEMSIZE];
++unsigned long mem_read_cnt[TRACE_MEMSIZE];
++unsigned long mem_write_cnt[TRACE_MEMSIZE];
++unsigned long mem_inst_cnt[TRACE_MEMSIZE];
++
++unsigned long max_cpu_read_cnt;
++unsigned long max_cpu_write_cnt;
++unsigned long max_cpu_inst_cnt;
++unsigned long max_mem_read_cnt;
++unsigned long max_mem_write_cnt;
++unsigned long max_mem_inst_cnt;
+ 
+ 
+ 	/* Node for a stack of pending memrefs per cache */
+Binary files dinero/libd4.a and dinero_trace/libd4.a differ
+diff -ruN dinero/ref.c dinero_trace/ref.c
+--- dinero/ref.c	2014-06-02 16:10:32.401313216 -0400
++++ dinero_trace/ref.c	2014-06-02 16:10:32.615310279 -0400
+@@ -710,9 +710,35 @@
+ 		 */
+ 		if (blockmiss) {
+ 			d4stacknode *rptr = c->stack[setnumber].top->up;
++
++			//parkhk
++			if(!strcmp("l3-ucache", c->name)){
++				switch (m.accesstype) {
++					case D4XREAD:	  
++					case D4XWRITE:	  mem_read_cnt[m.address>>6]++;  
++							  fprintf(trace_read, "0x%lx 0x%lx\n", trace_order, m.address);
++							  break;
++					case D4XINSTRN:	  mem_inst_cnt[m.address>>6]++;  
++							  fprintf(trace_inst, "0x%lx 0x%lx\n", trace_order, m.address);
++							  break;
++					default:	  printf("Warning unknown operation!!(%u)\n", m.accesstype);  break;
++				}
++				trace_l3++;
++
++			}
++
++
++
+ 			if (rptr->valid != 0) {
+-				if (!ronly && (rptr->valid & rptr->dirty) != 0)
++				if (!ronly && (rptr->valid & rptr->dirty) != 0){
++					//parkhk
++					//check write-back addr 
++					if(!strcmp("l3-ucache", c->name)){
++						mem_write_cnt[rptr->blockaddr>>6]++;
++						fprintf(trace_write, "0x%lx 0x%lx\n", ++trace_order, rptr->blockaddr);
++					}
+ 					d4_wbblock (c, rptr, D4VAL (c, lg2subblocksize));
++				}
+ 				if (c->stack[setnumber].n > D4HASH_THRESH)
+ 					d4_unhash (c, setnumber, rptr);
+ 				rptr->valid = 0;
+diff -ruN dinero/results.park dinero_trace/results.park
+--- dinero/results.park	2014-06-02 16:10:32.404313175 -0400
++++ dinero_trace/results.park	1969-12-31 19:00:00.000000000 -0500
+@@ -1,118 +0,0 @@
+----Dinero IV cache simulator, version 7
+----Written by Jan Edler and Mark D. Hill
+----Copyright (C) 1997 NEC Research Institute, Inc. and Mark D. Hill.
+----All rights reserved.
+----Copyright (C) 1985, 1989 Mark D. Hill.  All rights reserved.
+----See -copyright option for details
+-
+----Summary of options (-help option gives usage information).
+-
+--l2-usize 262144
+--l3-usize 8388608
+--l1-isize 32768
+--l1-dsize 32768
+--l2-ubsize 64
+--l3-ubsize 64
+--l1-ibsize 64
+--l1-dbsize 64
+--l2-usbsize 64
+--l3-usbsize 64
+--l1-isbsize 64
+--l1-dsbsize 64
+--l2-uassoc 8
+--l3-uassoc 16
+--l1-iassoc 4
+--l1-dassoc 4
+--l2-urepl l
+--l3-urepl l
+--l1-irepl l
+--l1-drepl l
+--l2-ufetch d
+--l3-ufetch d
+--l1-ifetch d
+--l1-dfetch d
+--l2-uwalloc a
+--l3-uwalloc a
+--l1-dwalloc a
+--l2-uwback a
+--l3-uwback a
+--l1-dwback a
+--skipcount 0
+--flushcount 0
+--maxcount 0
+--stat-interval 0
+--informat d
+--on-trigger 0x0
+--off-trigger 0x0
+-
+----Simulation begins.
+----Simulation complete.
+-l1-icache
+- Metrics		      Total	      Instrn	       Data	       Read	      Write	       Misc
+- -----------------	      ------	      ------	      ------	      ------	      ------	      ------
+- Demand Fetches		       87218	       87218	           0	           0	           0	           0
+-  Fraction of total	      1.0000	      1.0000	      0.0000	      0.0000	      0.0000	      0.0000
+-
+- Demand Misses		       15723	       15723	           0	           0	           0	           0
+-  Demand miss rate	      0.1803	      0.1803	      0.0000	      0.0000	      0.0000	      0.0000
+-
+- Multi-block refs                 0
+- Bytes From Memory	     1006272
+- ( / Demand Fetches)	     11.5374
+- Bytes To Memory	           0
+- ( / Demand Writes)	      0.0000
+- Total Bytes r/w Mem	     1006272
+- ( / Demand Fetches)	     11.5374
+-
+-l1-dcache
+- Metrics		      Total	      Instrn	       Data	       Read	      Write	       Misc
+- -----------------	      ------	      ------	      ------	      ------	      ------	      ------
+- Demand Fetches		      388543	           0	      388543	      224706	      163837	           0
+-  Fraction of total	      1.0000	      0.0000	      1.0000	      0.5783	      0.4217	      0.0000
+-
+- Demand Misses		       72199	           0	       72199	       48238	       23961	           0
+-  Demand miss rate	      0.1858	      0.0000	      0.1858	      0.2147	      0.1462	      0.0000
+-
+- Multi-block refs                 0
+- Bytes From Memory	     4620736
+- ( / Demand Fetches)	     11.8925
+- Bytes To Memory	     1567744
+- ( / Demand Writes)	      9.5689
+- Total Bytes r/w Mem	     6188480
+- ( / Demand Fetches)	     15.9274
+-
+-l2-ucache
+- Metrics		      Total	      Instrn	       Data	       Read	      Write	       Misc
+- -----------------	      ------	      ------	      ------	      ------	      ------	      ------
+- Demand Fetches		      112418	       15723	       96695	       72199	       24496	           0
+-  Fraction of total	      1.0000	      0.1399	      0.8601	      0.6422	      0.2179	      0.0000
+-
+- Demand Misses		       61658	        7210	       54448	       54428	          20	           0
+-  Demand miss rate	      0.5485	      0.4586	      0.5631	      0.7539	      0.0008	      0.0000
+-
+- Multi-block refs                 0
+- Bytes From Memory	     3944832
+- ( / Demand Fetches)	     35.0908
+- Bytes To Memory	     1489088
+- ( / Demand Writes)	     60.7890
+- Total Bytes r/w Mem	     5433920
+- ( / Demand Fetches)	     48.3367
+-
+-l3-ucache
+- Metrics		      Total	      Instrn	       Data	       Read	      Write	       Misc
+- -----------------	      ------	      ------	      ------	      ------	      ------	      ------
+- Demand Fetches		       84905	        7210	       77695	       54428	       23267	           0
+-  Fraction of total	      1.0000	      0.0849	      0.9151	      0.6410	      0.2740	      0.0000
+-
+- Demand Misses		       48306	        3391	       44915	       44911	           4	           0
+-  Demand miss rate	      0.5689	      0.4703	      0.5781	      0.8251	      0.0002	      0.0000
+-
+- Multi-block refs                 0
+- Bytes From Memory	     3091328
+- ( / Demand Fetches)	     36.4093
+- Bytes To Memory	     1458240
+- ( / Demand Writes)	     62.6742
+- Total Bytes r/w Mem	     4549568
+- ( / Demand Fetches)	     53.5842
+-
+----Execution complete.

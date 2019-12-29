@@ -1,0 +1,42 @@
+Usage: dineroIV [options]
+Valid options:
+ -help             Print this help message
+ -copyright        Give details on copyright and lack of warranty
+ -contact          Where to get the latest version or contact the authors
+ -dineroIII        Explain replacements for Dinero III options
+ -custom F         Generate and run custom simulator named F
+ -lN-Tsize P       Size
+ -lN-Tbsize P      Block size
+ -lN-Tsbsize P     Sub-block size (default same as block size)
+ -lN-Tassoc U      Associativity (default 1)
+ -lN-Trepl C       Replacement policy
+                   (l=LRU, f=FIFO, r=random) (default l)
+ -lN-Tfetch C      Fetch policy
+                   (d=demand, a=always, m=miss, t=tagged,
+                    l=load forward, s=subblock) (default d)
+ -lN-Tpfdist U     Prefetch distance (in sub-blocks) (default 1)
+ -lN-Tpfabort U    Prefetch abort percentage (0-100) (default 0)
+ -lN-Twalloc C     Write allocate policy
+                   (a=always, n=never, f=nofetch) (default a)
+ -lN-Twback C      Write back policy
+                   (a=always, n=never, f=nofetch) (default a)
+ -lN-Tccc          Compulsory/Capacity/Conflict miss statistics
+ -skipcount U      Skip initial U references
+ -flushcount U     Flush cache every U references
+ -maxcount U       Stop simulation after U references
+ -stat-interval U  Show statistics after every U references
+ -informat C       Input trace format
+                   (D=extended din, d=traditional din, p=pixie32, P=pixie64,
+                   b=binary) (default D)
+ -on-trigger A     Trigger address to start simulation
+ -off-trigger A    Trigger address to stop simulation
+ -stat-idcombine   Combine I&D cache stats
+Key:
+ U unsigned decimal integer
+ S like U but with optional [kKmMgG] scaling suffix
+ P like S but must be a power of 2
+ C single character
+ A hexadecimal address
+ F string
+ N cache level (1 <= N <= 5)
+ T cache type (u=unified, i=instruction, d=data)
